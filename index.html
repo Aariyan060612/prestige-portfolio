@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aariyan | Elite Software Engineer & Full-Stack Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cyber-grid"></div>
+    <div class="radial-glow"></div>
+
+    <header>
+        <div class="logo">
+            <span class="bracket">&lt;</span>Aariyan <span class="accent-dot">/</span><span class="bracket">&gt;</span>
+        </div>
+        <nav>
+            <a href="#about" class="nav-link">System</a>
+            <a href="#projects" class="nav-link">Creations</a>
+            <a href="#contact" class="nav-link">Connect</a>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="about">
+        <div class="hero-container">
+            <div class="status-badge scroll-animate">
+                <span class="pulse-indicator"></span> Ready for Deployments
+            </div>
+            <h1 class="scroll-animate">Engineering High-Fidelity <span class="gradient-text">Digital Architectures</span></h1>
+            <p class="hero-bio scroll-animate">
+                Full-Stack Software Creator specializing in real-time web applications, interactive AI pipelines, game compilation matrices, and high-performance system architectures. Turning conceptual logic into clean, production-ready code.
+            </p>
+            <div class="hero-cta scroll-animate">
+                <a href="#projects" class="btn primary-btn">Explore Grid</a>
+                <a href="#contact" class="btn secondary-btn">Establish Node</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="section-header scroll-animate">
+            <span class="section-tag">// PRODUCTION HUBS</span>
+            <h2>Core Applications</h2>
+        </div>
+
+        <div class="bento-grid">
+            
+            <div class="bento-card scroll-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="system-tag">SYSTEM PORTAL</span>
+                    </div>
+                    <h3>EcoScan Global</h3>
+                    <p>An advanced, data-driven analytical dashboard tracking environment metrics, automated image parsing, and global sustainability vector mappings using enterprise cloud streams.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Data Science</span>
+                        <span>Cloud Engine</span>
+                    </div>
+                    <a href="https://ecoscan-global.streamlit.app" target="_blank" class="launch-anchor">
+                        Launch Application <span class="arrow">&nearr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bento-card scroll-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="system-tag">NEURAL HUB</span>
+                    </div>
+                    <h3>Food AI Sous Chef</h3>
+                    <p>An intelligent web ecosystem leveraging custom language models and culinary inference layers to engineer custom menus, break down micro-nutrients, and optimize food prep structures.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Artificial Intel</span>
+                        <span>NLP Modules</span>
+                    </div>
+                    <a href="https://food-ai-sous-chef.streamlit.app" target="_blank" class="launch-anchor">
+                        Consult AI Chef <span class="arrow">&nearr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bento-card scroll-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="system-tag">SOURCE ENGINES</span>
+                    </div>
+                    <h3>Advanced Core Systems</h3>
+                    <p>A repository framework housing custom multi-threaded Java server applications, physics-based 2D platforming game matrices running on native HTML5 Canvas configurations, and developer tools.</p>
+                    <div class="tech-stack">
+                        <span>Java Architecture</span>
+                        <span>TypeScript</span>
+                        <span>HTML5 Canvas</span>
+                        <span>Git Pipelines</span>
+                    </div>
+                    <a href="https://github.com/Aariyan06012" target="_blank" class="launch-anchor">
+                        Analyze Repositories <span class="arrow">&nearr;</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="scroll-animate">
+        <div class="footer-container">
+            <span class="section-tag">// OPEN NETWORK TIERS</span>
+            <h2>Initialize Contact Node</h2>
+            <p class="footer-desc">Have a technical project, a systems inquiry, or looking to build out a custom cloud application? Ping my dashboard directly.</p>
+            
+            <div class="contact-channels">
+                <a href="https://wa.me/9967571216" target="_blank" class="contact-pill whatsapp-pill">
+                    <span class="pill-dot green-dot"></span> WhatsApp Secure Line
+                </a>
+                <a href="https://github.com/Aariyan06012" target="_blank" class="contact-pill github-pill">
+                    <span class="pill-dot blue-dot"></span> Secure GitHub Profile
+                </a>
+            </div>
+
+            <div class="system-footer-meta">
+                <p class="copyright">&copy; 2026 Aariyan. Engineered with zero dependencies. Pure Logic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
